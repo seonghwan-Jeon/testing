@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+	<h1>선호하는 음식</h1>
+	<h1>한식, 양식</h1>
+	
+	<div id="food_1">
+		<h2 id="title">한식</h2>
+		<ol>
+			<li> <a href="#">김치</a> </li>
+			<li>불고기</li>
+			<li>비빔밥</li>
+		</ol>
+	</div>
+
+	<div id="food_2">
+		<h2>양식</h2>
+		<ol id="list">
+			<li>돈까스</li>
+			<li id="pizza">피자</li>
+			<li>파스타</li>
+		</ol>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	// 모든 <h1>요소를 선택한후 ~~ 배열에 저장 합니다 .  배열 [<h1>선호하는 음식</h1> , <h1>한식, 양식</h1> ]
+	// 그중  인덱스 0위치에 저장된 <h1>선호하는 음식</h1>을 선택하여 가져와서
+	// 글자를 초록색으로 적용
+	document.getElementsByTagName("h1")[0].style.color = "green";
+	
+	//아이디값이 "title"인 태그요소를 선택한후  css로 글자색상을 빨간색으로 적용
+	document.getElementById("title").style.color = "red";
+	
+	//아이디값이 "food_1"인 태그의 하위모든<li>태그만 선택해... 
+	//그중에서  인덱스 0에 위치한  첫번쨰<li>태그에만  배경색상으로 빨간색을 적용	
+	var myList = document.getElementById("food_1").getElementsByTagName("li")[0];
+	myList.style.backgroundColor = "red";
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+

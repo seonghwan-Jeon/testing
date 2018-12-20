@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript">
+ //내장함수 종류
+ //eval(연산식) : 연산식을 계산하고 그결과를 반환 합니다.
+ 
+ var str = "3+5";
+ var result = eval(str);
+ document.write(result , "<br/>");//8
+ 
+ //parseInt(String)  :  String를 정수로 변환하고 그값을 반환 함.
+ var num = "12.34";
+ result = parseInt(num);
+ document.write(result , "<br/>");
+ 
+ // 강제 종료 역할을 하는 return문
+ 
+ function myFnc() {
+	document.write("hello");
+	return;
+	document.write("javascript");
+}
+ 
+ myFnc();//함수를 호출 하면 return문이 실행되어 함수를 강제로 종료 시킴
+ //그러므로 "javascript"문수는 출력 되지 않음
+ 
+ 
+ /*재귀 함수 호출*/
+ //최초 함수를 호출하면서 함수 정의문 내에서.. 
+ //실행문으로 함수를 다시 호출 하는 것을 재귀함수 호출~~
+ 
+ var num1 = 0;
+ 
+ function testFnc() {
+	num1++; //num1의 데이터가 1씩 증가 
+	document.write(num1, "<br/>");
+	
+	if(num1 == 10){
+		return;
+	}
+	//재귀함수 호출~ 
+	testFnc();
+}
+ 
+ //함수 호출~ 
+ testFnc();
+ 
+ //결론 :  testFnc()함수에 실행문으로 재귀 함수 호출문을 삽입하여 
+ //반복적으로 testFnc()함수가 호출되도록 하였고,
+ //조건 if를 사용하여 재귀함수 호출을 종료 시켰습니다.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
